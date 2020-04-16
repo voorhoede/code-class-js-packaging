@@ -1,0 +1,45 @@
+--- a/exercise-2/package.json
++++ b/exercise-2/package.json
+@@ -1,11 +1,21 @@
+ {
+-  "name": "exercise-1",
+-  "version": "1.0.0",
++  "name": "exercise-1-hello-world",
++  "version": "2.0.0",
+   "description": "",
+-  "main": "index.js",
++  "type": "module",
++  "main": "./src/main.cjs",
++  "exports": {
++    "require": "./src/main.cjs",
++    "default": "./src/main.mjs"
++  },
++  "files": [
++    "src/main.cjs",
++    "src/main.mjs"
++  ],
+   "scripts": {
+     "start": "node ./run.cjs && node ./run.mjs",
+-    "build": "rollup ..."
++    "build": "rollup src/main.mjs --format cjs --file src/main.cjs",
++    "prepack": "npm run build"
+   },
+   "dependencies": {
+     "rollup": "^2.6.1"
+@@ -14,6 +24,14 @@
+   "engines": {
+     "node": ">= 13"
+   },
+-  "author": "",
+-  "license": "ISC"
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/voorhoede/code-class-js-packaging.git"
++  },
++  "author": "Selwyn <talk@selwyn.cc> (https://selwyn.cc/)",
++  "license": "ISC",
++  "keywords": [
++    "greetings",
++    "logger"
++  ]
+ }

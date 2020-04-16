@@ -1,0 +1,28 @@
+{
+  "name": "exercise-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.js",
+  "files": [
+    "src/main.js"
+  ],
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "calvin-and-hobbes-quotes": "^1.1.2"
+  },
+  "engines": {
+    "node": ">= 13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voorhoede/code-class-js-packaging.git"
+  },
+  "author": "Selwyn <talk@selwyn.cc> (https://selwyn.cc/)",
+  "license": "ISC",
+  "keywords": [
+    "greetings",
+    "logger"
+  ]
+}

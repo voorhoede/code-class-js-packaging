@@ -1,0 +1,22 @@
+--- /dev/null
++++ b/exercise-1/package.json
+@@ -0,0 +1,19 @@
++{
++  "name": "exercise-1",
++  "version": "1.0.0",
++  "description": "",
++  "main": "index.js",
++  "scripts": {
++    "start": "node ./run.js",
++    "build": "rollup ./src/main.js --format cjs --file ./dist.js"
++  },
++  "dependencies": {
++    "rollup": "^2.6.1"
++  },
++  "devDependencies": {},
++  "engines": {
++    "node": ">= 13"
++  },
++  "author": "",
++  "license": "ISC"
++}
